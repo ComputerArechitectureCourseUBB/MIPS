@@ -15,7 +15,7 @@
         li $a1, 4		# initialize b
         li $s0, 255		# initialize $s0 to observe the stack
         li $s1, 127		# initialize $s1 to observe the stack
-	jal funcli	    	# call the function 
+	jal func	    	# call the function 
 	move $s4, $v0  		# move result to the s4 register 
 	sw $s4, 0($0)		# save s4 into the memory
 	
