@@ -1,0 +1,881 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/sl2.vhd" into library work
+Parsing entity <sl2>.
+Parsing architecture <behave> of entity <sl2>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/signext.vhd" into library work
+Parsing entity <signext>.
+Parsing architecture <behave> of entity <signext>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd" into library work
+Parsing entity <regfile>.
+Parsing architecture <behave> of entity <regfile>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mux2.vhd" into library work
+Parsing entity <mux2>.
+Parsing architecture <behave> of entity <mux2>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/md.vhd" into library work
+Parsing entity <maindec>.
+Parsing architecture <behave> of entity <maindec>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/flopr.vhd" into library work
+Parsing entity <flopr>.
+Parsing architecture <Behavioral> of entity <flopr>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/alu.vhd" into library work
+Parsing entity <alu>.
+Parsing architecture <bhv> of entity <alu>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/adder.vhd" into library work
+Parsing entity <adder>.
+Parsing architecture <behave> of entity <adder>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/ad.vhd" into library work
+Parsing entity <aludec>.
+Parsing architecture <behave> of entity <aludec>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dp.vhd" into library work
+Parsing entity <datapath>.
+Parsing architecture <struct> of entity <datapath>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/cont.vhd" into library work
+Parsing entity <controller>.
+Parsing architecture <struct> of entity <controller>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mips1.vhd" into library work
+Parsing entity <mips>.
+Parsing architecture <struct> of entity <mips>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/imem.vhd" into library work
+Parsing entity <imem>.
+Parsing architecture <behave> of entity <imem>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dmem.vhd" into library work
+Parsing entity <dmem>.
+Parsing architecture <Behavioral> of entity <dmem>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/AddressDecoder.vhd" into library work
+Parsing entity <AddressDecoder>.
+Parsing architecture <Behavioral> of entity <addressdecoder>.
+Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <test> of entity <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <test>) from library <work>.
+
+Elaborating entity <mips> (architecture <struct>) from library <work>.
+
+Elaborating entity <controller> (architecture <struct>) from library <work>.
+
+Elaborating entity <maindec> (architecture <behave>) from library <work>.
+
+Elaborating entity <aludec> (architecture <behave>) from library <work>.
+
+Elaborating entity <datapath> (architecture <struct>) from library <work>.
+
+Elaborating entity <flopr> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <adder> (architecture <behave>) from library <work>.
+
+Elaborating entity <sl2> (architecture <behave>) from library <work>.
+
+Elaborating entity <mux2> (architecture <behave>) with generics from library <work>.
+
+Elaborating entity <regfile> (architecture <behave>) from library <work>.
+WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd" Line 32: mem should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd" Line 36: mem should be on the sensitivity list of the process
+
+Elaborating entity <mux2> (architecture <behave>) with generics from library <work>.
+
+Elaborating entity <signext> (architecture <behave>) from library <work>.
+
+Elaborating entity <alu> (architecture <bhv>) from library <work>.
+
+Elaborating entity <imem> (architecture <behave>) with generics from library <work>.
+
+Elaborating entity <dmem> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <AddressDecoder> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd" Line 63: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd" Line 74: reset should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd".
+    Found 32-bit register for signal <QSW>.
+    Found 32-bit register for signal <QLED>.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readdata<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+	inferred  32 Latch(s).
+	inferred  64 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <mips>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mips1.vhd".
+    Summary:
+	no macro.
+Unit <mips> synthesized.
+
+Synthesizing Unit <controller>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/cont.vhd".
+    Summary:
+	no macro.
+Unit <controller> synthesized.
+
+Synthesizing Unit <maindec>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/md.vhd".
+    Summary:
+	no macro.
+Unit <maindec> synthesized.
+
+Synthesizing Unit <aludec>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/ad.vhd".
+    Summary:
+	no macro.
+Unit <aludec> synthesized.
+
+Synthesizing Unit <datapath>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dp.vhd".
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <datapath> synthesized.
+
+Synthesizing Unit <flopr>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/flopr.vhd".
+        width = 32
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <flopr> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/adder.vhd".
+    Found 32-bit adder for signal <y> created at line 10.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+Synthesizing Unit <sl2>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/sl2.vhd".
+WARNING:Xst:647 - Input <a<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <sl2> synthesized.
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mux2.vhd".
+        width = 32
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2_1> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd".
+    Found 32-bit register for signal <mem<30>>.
+    Found 32-bit register for signal <mem<29>>.
+    Found 32-bit register for signal <mem<28>>.
+    Found 32-bit register for signal <mem<27>>.
+    Found 32-bit register for signal <mem<26>>.
+    Found 32-bit register for signal <mem<25>>.
+    Found 32-bit register for signal <mem<24>>.
+    Found 32-bit register for signal <mem<23>>.
+    Found 32-bit register for signal <mem<22>>.
+    Found 32-bit register for signal <mem<21>>.
+    Found 32-bit register for signal <mem<20>>.
+    Found 32-bit register for signal <mem<19>>.
+    Found 32-bit register for signal <mem<18>>.
+    Found 32-bit register for signal <mem<17>>.
+    Found 32-bit register for signal <mem<16>>.
+    Found 32-bit register for signal <mem<15>>.
+    Found 32-bit register for signal <mem<14>>.
+    Found 32-bit register for signal <mem<13>>.
+    Found 32-bit register for signal <mem<12>>.
+    Found 32-bit register for signal <mem<11>>.
+    Found 32-bit register for signal <mem<10>>.
+    Found 32-bit register for signal <mem<9>>.
+    Found 32-bit register for signal <mem<8>>.
+    Found 32-bit register for signal <mem<7>>.
+    Found 32-bit register for signal <mem<6>>.
+    Found 32-bit register for signal <mem<5>>.
+    Found 32-bit register for signal <mem<4>>.
+    Found 32-bit register for signal <mem<3>>.
+    Found 32-bit register for signal <mem<2>>.
+    Found 32-bit register for signal <mem<1>>.
+    Found 32-bit register for signal <mem<0>>.
+    Found 32-bit register for signal <mem<31>>.
+INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 32-bit 32-to-1 multiplexer for signal <ra1[4]_mem[31][31]_wide_mux_130_OUT> created at line 32.
+    Found 32-bit 32-to-1 multiplexer for signal <ra2[4]_mem[31][31]_wide_mux_133_OUT> created at line 36.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <mux2_2>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mux2.vhd".
+        width = 5
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2_2> synthesized.
+
+Synthesizing Unit <signext>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/signext.vhd".
+    Summary:
+	no macro.
+Unit <signext> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/alu.vhd".
+WARNING:Xst:653 - Signal <zero> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32-bit adder for signal <a[31]_b[31]_add_0_OUT> created at line 18.
+    Found 32-bit subtractor for signal <GND_49_o_GND_49_o_sub_2_OUT<31:0>> created at line 19.
+    Found 32-bit 7-to-1 multiplexer for signal <result> created at line 17.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <imem>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/imem.vhd".
+        fname = "membin.txt"
+WARNING:Xst:647 - Input <a<31:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'RAM', unconnected in block 'imem', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <RAM>, simulation mismatch.
+    Found 10001x32-bit single-port Read Only RAM <Mram_RAM> for signal <RAM>.
+    Found 32-bit register for signal <rd>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <imem> synthesized.
+
+Synthesizing Unit <dmem>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dmem.vhd".
+    Found 64x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 32-bit register for signal <rd>.
+    Found 32-bit comparator greater for signal <n0000> created at line 51
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <dmem> synthesized.
+
+Synthesizing Unit <AddressDecoder>.
+    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/AddressDecoder.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <RDsel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RDsel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator lessequal for signal <n0000> created at line 32
+    Summary:
+	inferred   2 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <AddressDecoder> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 10001x32-bit single-port Read Only RAM                : 1
+ 64x32-bit single-port RAM                             : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 37
+ 32-bit register                                       : 37
+# Latches                                              : 34
+ 1-bit latch                                           : 34
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 85
+ 1-bit 2-to-1 multiplexer                              : 65
+ 32-bit 2-to-1 multiplexer                             : 17
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <QSW_31> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_30> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_29> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_28> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_27> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_26> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_25> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_24> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_23> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_22> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_21> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_20> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_19> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_18> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_17> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_16> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_15> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_14> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_13> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_12> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_11> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_10> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_9> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <QSW_8> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <QSW<31:8>> (without init value) have a constant value of 0 in block <top>.
+
+Synthesizing (advanced) Unit <dmem>.
+INFO:Xst:3230 - The RAM description <Mram_RAM> will not be implemented on the device block RAM because of limited available resources. If you would like this RAM to be implemented in block RAM, please select a larger device or increase the value specified by the BRAM_Utilization_Ratio constraint.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <dataadr<5:0>>  |          |
+    |     diA            | connected to signal <wd>            |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <dmem> synthesized (advanced).
+
+Synthesizing (advanced) Unit <imem>.
+INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <rd>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 10001-word x 32-bit                 |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <rd>            |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <imem> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 10001x32-bit single-port block Read Only RAM          : 1
+ 64x32-bit single-port distributed RAM                 : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 1128
+ Flip-Flops                                            : 1128
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 147
+ 1-bit 2-to-1 multiplexer                              : 65
+ 1-bit 32-to-1 multiplexer                             : 64
+ 32-bit 2-to-1 multiplexer                             : 17
+ 5-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    RDsel_1 in unit <AddressDecoder>
+    RDsel_0 in unit <AddressDecoder>
+
+
+Optimizing unit <flopr> ...
+
+Optimizing unit <top> ...
+WARNING:Xst:1294 - Latch <readdata_30> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_31> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_27> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_29> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_28> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_24> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_26> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_25> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_23> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_22> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_21> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_20> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_17> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_19> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_18> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_14> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_16> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_15> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_11> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_13> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_12> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_8> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_10> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_9> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_5> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_7> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_6> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_2> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_4> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_3> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_1> is equivalent to a wire in block <top>.
+WARNING:Xst:1294 - Latch <readdata_0> is equivalent to a wire in block <top>.
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <dmem> ...
+
+Optimizing unit <AddressDecoder> ...
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_31> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <mips1/dp/pcreg/q_0> of sequential type is unconnected in block <top>.
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM5> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM8> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM9> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM10> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM11> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM13> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM15> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM2>, <imem1/Mram_RAM16> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM6>, <imem1/Mram_RAM14> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM6>, <imem1/Mram_RAM22> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM12>, <imem1/Mram_RAM19> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM21>, <imem1/Mram_RAM26> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM21>, <imem1/Mram_RAM29> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM21>, <imem1/Mram_RAM31> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM25>, <imem1/Mram_RAM27> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM25>, <imem1/Mram_RAM28> are equivalent, second RAM is removed
+INFO:Xst:2399 - RAMs <imem1/Mram_RAM25>, <imem1/Mram_RAM32> are equivalent, second RAM is removed
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 22.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1110
+ Flip-Flops                                            : 1110
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1099
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 12
+#      LUT2                        : 2
+#      LUT3                        : 28
+#      LUT4                        : 72
+#      LUT5                        : 102
+#      LUT6                        : 765
+#      MUXCY                       : 58
+#      MUXF7                       : 11
+#      VCC                         : 1
+#      XORCY                       : 46
+# FlipFlops/Latches                : 1112
+#      FDC                         : 14
+#      FDCE                        : 40
+#      FDE                         : 32
+#      FDRE                        : 1024
+#      LD                          : 2
+# RAMS                             : 47
+#      RAM64X1S                    : 32
+#      RAMB16BWER                  : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 9
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1112  out of  18224     6%  
+ Number of Slice LUTs:                 1014  out of   9112    11%  
+    Number used as Logic:               982  out of   9112    10%  
+    Number used as Memory:               32  out of   2176     1%  
+       Number used as RAM:               32
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2006
+   Number with an unused Flip Flop:     894  out of   2006    44%  
+   Number with an unused LUT:           992  out of   2006    49%  
+   Number of fully used LUT-FF pairs:   120  out of   2006     5%  
+   Number of unique control sets:        36
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    232     7%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               15  out of     32    46%  
+    Number using Block RAM only:         15
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1157  |
+AdDec/RDsel_0_G(AdDec/RDsel_1_G:O) | NONE(*)(AdDec/RDsel_1) | 2     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 12.857ns (Maximum Frequency: 77.777MHz)
+   Minimum input arrival time before clock: 3.877ns
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.857ns (frequency: 77.777MHz)
+  Total number of paths / destination ports: 28648677 / 2672
+-------------------------------------------------------------------------
+Delay:               12.857ns (Levels of Logic = 16)
+  Source:            imem1/Mram_RAM23 (RAM)
+  Destination:       dmem1/Mram_RAM17 (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: imem1/Mram_RAM23 to dmem1/Mram_RAM17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA0  257   1.850   2.171  imem1/Mram_RAM23 (instr<22>)
+     LUT6:I4->O            1   0.203   0.827  mips1/dp/rf/mux_81 (mips1/dp/rf/mux_81)
+     LUT6:I2->O            1   0.203   0.684  mips1/dp/rf/mux_3 (mips1/dp/rf/mux_3)
+     LUT4:I2->O            2   0.203   0.721  mips1/dp/rf/Mmux_rd1110 (mips1/dp/srca<0>)
+     LUT5:I3->O            1   0.203   0.000  mips1/dp/mainalu/Mmux_result6_rs_lut<0> (mips1/dp/mainalu/Mmux_result6_rs_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  mips1/dp/mainalu/Mmux_result6_rs_cy<0> (mips1/dp/mainalu/Mmux_result6_rs_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  mips1/dp/mainalu/Mmux_result6_rs_cy<1> (mips1/dp/mainalu/Mmux_result6_rs_cy<1>)
+     XORCY:CI->O          78   0.180   1.837  mips1/dp/mainalu/Mmux_result6_rs_xor<2> (tmpdataadr<2>)
+     LUT5:I3->O            1   0.203   0.000  dmem1/Mcompar_n0000_lut<0> (dmem1/Mcompar_n0000_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  dmem1/Mcompar_n0000_cy<0> (dmem1/Mcompar_n0000_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  dmem1/Mcompar_n0000_cy<1> (dmem1/Mcompar_n0000_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  dmem1/Mcompar_n0000_cy<2> (dmem1/Mcompar_n0000_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  dmem1/Mcompar_n0000_cy<3> (dmem1/Mcompar_n0000_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  dmem1/Mcompar_n0000_cy<4> (dmem1/Mcompar_n0000_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  dmem1/Mcompar_n0000_cy<5> (dmem1/Mcompar_n0000_cy<5>)
+     MUXCY:CI->O          34   0.258   1.321  dmem1/Mcompar_n0000_cy<6> (dmem1/Mcompar_n0000_cy<6>)
+     LUT4:I3->O           17   0.205   1.027  dmem1/we_dataadr[31]_AND_112_o1 (dmem1/we_dataadr[31]_AND_112_o)
+     RAM64X1S:WE               0.304          dmem1/Mram_RAM2
+    ----------------------------------------
+    Total                     12.857ns (4.270ns logic, 8.587ns route)
+                                       (33.2% logic, 66.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1086 / 1086
+-------------------------------------------------------------------------
+Offset:              3.877ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       QLED_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to QLED_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1078   1.222   2.225  reset_IBUF (reset_IBUF)
+     FDCE:CLR                  0.430          QLED_0
+    ----------------------------------------
+    Total                      3.877ns (1.652ns logic, 2.225ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            QLED_7 (FF)
+  Destination:       LED<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: QLED_7 to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   0.650  QLED_7 (QLED_7)
+     OBUF:I->O                 2.571          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock AdDec/RDsel_0_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |   11.851|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+AdDec/RDsel_0_G|         |    3.127|         |         |
+clk            |   12.857|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 11.95 secs
+ 
+--> 
+
+
+Total memory usage is 150672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  120 (   0 filtered)
+Number of infos    :   23 (   0 filtered)
+

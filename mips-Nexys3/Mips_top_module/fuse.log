@@ -1,0 +1,57 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/icarosix/git/mips_top_module/Mips_top_module/tb_main_isim_beh.exe -prj /home/icarosix/git/mips_top_module/Mips_top_module/tb_main_beh.prj work.tb_main 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/sl2.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/signext.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/regfile.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/mux2.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/md.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/flopr.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/alu.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/adder.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/ad.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/dp.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/cont.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/mips1.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/imem.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/dmem.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/AddressDecoder.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/top.vhd" into library work
+Parsing VHDL file "/home/icarosix/git/mips_top_module/Mips_top_module/tb_main.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 99708 KB
+Fuse CPU Usage: 820 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package numeric_std
+Compiling architecture behave of entity maindec [maindec_default]
+Compiling architecture behave of entity aludec [aludec_default]
+Compiling architecture struct of entity controller [controller_default]
+Compiling architecture behavioral of entity flopr [\flopr(32)\]
+Compiling architecture behave of entity adder [adder_default]
+Compiling architecture behave of entity sl2 [sl2_default]
+Compiling architecture behave of entity mux2 [\mux2(32)\]
+Compiling architecture behave of entity regfile [regfile_default]
+Compiling architecture behave of entity mux2 [\mux2(5)\]
+Compiling architecture behave of entity signext [signext_default]
+Compiling architecture bhv of entity alu [alu_default]
+Compiling architecture struct of entity datapath [datapath_default]
+Compiling architecture struct of entity mips [mips_default]
+Compiling architecture behave of entity imem [\imem("membin.txt")(1,10)\]
+Compiling architecture behavioral of entity dmem [dmem_default]
+Compiling architecture behavioral of entity AddressDecoder [addressdecoder_default]
+Compiling architecture test of entity top [top_default]
+Compiling architecture behavior of entity tb_main
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 41 VHDL Units
+Built simulation executable /home/icarosix/git/mips_top_module/Mips_top_module/tb_main_isim_beh.exe
+Fuse Memory Usage: 1202976 KB
+Fuse CPU Usage: 1040 ms
+GCC CPU Usage: 3240 ms

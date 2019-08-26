@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.ncd
+OUTFILE=/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module
+LICENSE=WebPack
+USER_INFO=211291799_0_0_918
