@@ -1,18 +1,18 @@
-Release 14.7 - xst P.20131013 (lin)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
 Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: top.prj
@@ -108,52 +108,52 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/sl2.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/sl2.vhd" into library work
 Parsing entity <sl2>.
 Parsing architecture <behave> of entity <sl2>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/signext.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/signext.vhd" into library work
 Parsing entity <signext>.
 Parsing architecture <behave> of entity <signext>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/regfile.vhd" into library work
 Parsing entity <regfile>.
 Parsing architecture <behave> of entity <regfile>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mux2.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/mux2.vhd" into library work
 Parsing entity <mux2>.
 Parsing architecture <behave> of entity <mux2>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/md.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/md.vhd" into library work
 Parsing entity <maindec>.
 Parsing architecture <behave> of entity <maindec>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/flopr.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/flopr.vhd" into library work
 Parsing entity <flopr>.
 Parsing architecture <Behavioral> of entity <flopr>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/alu.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <bhv> of entity <alu>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/adder.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/adder.vhd" into library work
 Parsing entity <adder>.
 Parsing architecture <behave> of entity <adder>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/ad.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/ad.vhd" into library work
 Parsing entity <aludec>.
 Parsing architecture <behave> of entity <aludec>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dp.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/dp.vhd" into library work
 Parsing entity <datapath>.
 Parsing architecture <struct> of entity <datapath>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/cont.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/cont.vhd" into library work
 Parsing entity <controller>.
 Parsing architecture <struct> of entity <controller>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mips1.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/mips1.vhd" into library work
 Parsing entity <mips>.
 Parsing architecture <struct> of entity <mips>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/imem.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/imem.vhd" into library work
 Parsing entity <imem>.
 Parsing architecture <behave> of entity <imem>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dmem.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/dmem.vhd" into library work
 Parsing entity <dmem>.
 Parsing architecture <Behavioral> of entity <dmem>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/AddressDecoder.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/AddressDecoder.vhd" into library work
 Parsing entity <AddressDecoder>.
 Parsing architecture <Behavioral> of entity <addressdecoder>.
-Parsing VHDL file "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd" into library work
+Parsing VHDL file "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/top.vhd" into library work
 Parsing entity <top>.
 Parsing architecture <test> of entity <top>.
 
@@ -182,8 +182,8 @@ Elaborating entity <sl2> (architecture <behave>) from library <work>.
 Elaborating entity <mux2> (architecture <behave>) with generics from library <work>.
 
 Elaborating entity <regfile> (architecture <behave>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd" Line 32: mem should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd" Line 36: mem should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/regfile.vhd" Line 32: mem should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/regfile.vhd" Line 36: mem should be on the sensitivity list of the process
 
 Elaborating entity <mux2> (architecture <behave>) with generics from library <work>.
 
@@ -196,15 +196,15 @@ Elaborating entity <imem> (architecture <behave>) with generics from library <wo
 Elaborating entity <dmem> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <AddressDecoder> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd" Line 63: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd" Line 74: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/top.vhd" Line 63: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/top.vhd" Line 74: reset should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/top.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/top.vhd".
     Found 32-bit register for signal <QSW>.
     Found 32-bit register for signal <QLED>.
 WARNING:Xst:737 - Found 1-bit latch for signal <readdata<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -246,38 +246,38 @@ WARNING:Xst:737 - Found 1-bit latch for signal <readdata<0>>. Latches may be gen
 Unit <top> synthesized.
 
 Synthesizing Unit <mips>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mips1.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/mips1.vhd".
     Summary:
 	no macro.
 Unit <mips> synthesized.
 
 Synthesizing Unit <controller>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/cont.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/cont.vhd".
     Summary:
 	no macro.
 Unit <controller> synthesized.
 
 Synthesizing Unit <maindec>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/md.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/md.vhd".
     Summary:
 	no macro.
 Unit <maindec> synthesized.
 
 Synthesizing Unit <aludec>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/ad.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/ad.vhd".
     Summary:
 	no macro.
 Unit <aludec> synthesized.
 
 Synthesizing Unit <datapath>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dp.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/dp.vhd".
 WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <datapath> synthesized.
 
 Synthesizing Unit <flopr>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/flopr.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/flopr.vhd".
         width = 32
     Found 32-bit register for signal <q>.
     Summary:
@@ -285,28 +285,28 @@ Synthesizing Unit <flopr>.
 Unit <flopr> synthesized.
 
 Synthesizing Unit <adder>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/adder.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/adder.vhd".
     Found 32-bit adder for signal <y> created at line 10.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <adder> synthesized.
 
 Synthesizing Unit <sl2>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/sl2.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/sl2.vhd".
 WARNING:Xst:647 - Input <a<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <sl2> synthesized.
 
 Synthesizing Unit <mux2_1>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mux2.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/mux2.vhd".
         width = 32
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux2_1> synthesized.
 
 Synthesizing Unit <regfile>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/regfile.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/regfile.vhd".
     Found 32-bit register for signal <mem<30>>.
     Found 32-bit register for signal <mem<29>>.
     Found 32-bit register for signal <mem<28>>.
@@ -349,20 +349,20 @@ INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <mem>. Yo
 Unit <regfile> synthesized.
 
 Synthesizing Unit <mux2_2>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/mux2.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/mux2.vhd".
         width = 5
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <mux2_2> synthesized.
 
 Synthesizing Unit <signext>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/signext.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/signext.vhd".
     Summary:
 	no macro.
 Unit <signext> synthesized.
 
 Synthesizing Unit <alu>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/alu.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/alu.vhd".
 WARNING:Xst:653 - Signal <zero> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 32-bit adder for signal <a[31]_b[31]_add_0_OUT> created at line 18.
     Found 32-bit subtractor for signal <GND_49_o_GND_49_o_sub_2_OUT<31:0>> created at line 19.
@@ -373,7 +373,7 @@ WARNING:Xst:653 - Signal <zero> is used but never assigned. This sourceless sign
 Unit <alu> synthesized.
 
 Synthesizing Unit <imem>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/imem.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/imem.vhd".
         fname = "membin.txt"
 WARNING:Xst:647 - Input <a<31:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:2999 - Signal 'RAM', unconnected in block 'imem', is tied to its initial value.
@@ -386,7 +386,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <RAM>, s
 Unit <imem> synthesized.
 
 Synthesizing Unit <dmem>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/dmem.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/dmem.vhd".
     Found 64x32-bit single-port RAM <Mram_RAM> for signal <RAM>.
     Found 32-bit register for signal <rd>.
     Found 32-bit comparator greater for signal <n0000> created at line 51
@@ -397,7 +397,7 @@ Synthesizing Unit <dmem>.
 Unit <dmem> synthesized.
 
 Synthesizing Unit <AddressDecoder>.
-    Related source file is "/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/AddressDecoder.vhd".
+    Related source file is "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/AddressDecoder.vhd".
 WARNING:Xst:737 - Found 1-bit latch for signal <RDsel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <RDsel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 32-bit comparator lessequal for signal <n0000> created at line 32
@@ -867,13 +867,13 @@ clk            |   12.857|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 11.95 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.06 secs
  
 --> 
 
 
-Total memory usage is 150672 kilobytes
+Total memory usage is 543804 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  120 (   0 filtered)

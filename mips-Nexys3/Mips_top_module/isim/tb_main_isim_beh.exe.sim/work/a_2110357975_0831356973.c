@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/icarosix/git/mips_top_module/Mips_top_module/sl2.vhd";
+static const char *ng0 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/sl2.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -60,7 +60,7 @@ LAB3:    t1 = (t0 + 1032U);
     t4 = (t3 * 1U);
     t5 = (0 + t4);
     t1 = (t2 + t5);
-    t6 = (t0 + 4320);
+    t6 = (t0 + 4576);
     t10 = ((IEEE_P_2592010699) + 4000);
     t12 = (t11 + 0U);
     t13 = (t12 + 0U);

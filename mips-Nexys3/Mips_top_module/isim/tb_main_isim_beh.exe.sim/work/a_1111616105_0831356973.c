@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/icarosix/git/mips_top_module/Mips_top_module/regfile.vhd";
+static const char *ng0 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/regfile.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -109,7 +109,7 @@ LAB10:    xsi_set_current_line(24, ng0);
     t4 = *((char **)t1);
     t1 = (t0 + 1832U);
     t7 = *((char **)t1);
-    t1 = (t0 + 7000U);
+    t1 = (t0 + 7712U);
     t17 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t7, t1);
     t18 = (t17 - 31);
     t8 = (t18 * -1);
@@ -147,7 +147,7 @@ static void work_a_1111616105_0831356973_p_1(char *t0)
 LAB0:    xsi_set_current_line(30, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6968U);
+    t1 = (t0 + 7680U);
     t3 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t2, t1);
     t4 = (t3 == 0);
     if (t4 != 0)
@@ -158,7 +158,7 @@ LAB4:    xsi_set_current_line(32, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1512U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6968U);
+    t1 = (t0 + 7680U);
     t3 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t5, t1);
     t12 = (t3 - 31);
     t13 = (t12 * -1);
@@ -177,7 +177,7 @@ LAB4:    xsi_set_current_line(32, ng0);
 LAB3:    xsi_set_current_line(35, ng0);
     t1 = (t0 + 1672U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6984U);
+    t1 = (t0 + 7696U);
     t3 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t2, t1);
     t4 = (t3 == 0);
     if (t4 != 0)
@@ -188,7 +188,7 @@ LAB7:    xsi_set_current_line(36, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1672U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6984U);
+    t1 = (t0 + 7696U);
     t3 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t5, t1);
     t12 = (t3 - 31);
     t13 = (t12 * -1);
@@ -209,7 +209,7 @@ LAB6:    t1 = (t0 + 4208);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(30, ng0);
-    t5 = (t0 + 8178);
+    t5 = (t0 + 8890);
     t7 = (t0 + 4352);
     t8 = (t7 + 56U);
     t9 = *((char **)t8);
@@ -220,7 +220,7 @@ LAB2:    xsi_set_current_line(30, ng0);
     goto LAB3;
 
 LAB5:    xsi_set_current_line(35, ng0);
-    t5 = (t0 + 8210);
+    t5 = (t0 + 8922);
     t7 = (t0 + 4416);
     t8 = (t7 + 56U);
     t9 = *((char **)t8);

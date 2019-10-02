@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/icarosix/git/mips_top_module/Mips_top_module/mux2.vhd";
+static const char *ng0 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/mux2.vhd";
 
 
 

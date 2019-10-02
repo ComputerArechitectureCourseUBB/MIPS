@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/icarosix/git/mips_top_module/Mips_top_module/top.vhd";
+static const char *ng0 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/top.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -56,7 +56,7 @@ static void work_a_1335952598_1985558087_p_0(char *t0)
 
 LAB0:    xsi_set_current_line(53, ng0);
 
-LAB3:    t1 = (t0 + 10512);
+LAB3:    t1 = (t0 + 11984);
     t3 = (t0 + 1672U);
     t4 = *((char **)t3);
     t5 = (31 - 31);
@@ -253,7 +253,7 @@ LAB9:
 LAB8:    goto LAB3;
 
 LAB7:    xsi_set_current_line(78, ng0);
-    t2 = (t0 + 10514);
+    t2 = (t0 + 11986);
     t7 = (t0 + 1512U);
     t8 = *((char **)t7);
     t9 = ((IEEE_P_2592010699) + 4000);
@@ -269,7 +269,7 @@ LAB7:    xsi_set_current_line(78, ng0);
     t16 = (t16 + 1);
     t14 = (t10 + 12U);
     *((unsigned int *)t14) = t16;
-    t14 = (t0 + 10104U);
+    t14 = (t0 + 11576U);
     t7 = xsi_base_array_concat(t7, t12, t9, (char)97, t2, t13, (char)97, t8, t14, (char)101);
     t16 = (24U + 8U);
     t17 = (32U != t16);
@@ -345,8 +345,8 @@ static void work_a_1335952598_1985558087_p_3(char *t0)
 LAB0:    xsi_set_current_line(84, ng0);
     t2 = (t0 + 3432U);
     t3 = *((char **)t2);
-    t2 = (t0 + 10152U);
-    t4 = (t0 + 10538);
+    t2 = (t0 + 11624U);
+    t4 = (t0 + 12010);
     t7 = (t6 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -365,8 +365,8 @@ LAB0:    xsi_set_current_line(84, ng0);
 
 LAB6:    t8 = (t0 + 3432U);
     t12 = *((char **)t8);
-    t8 = (t0 + 10152U);
-    t13 = (t0 + 10540);
+    t8 = (t0 + 11624U);
+    t13 = (t0 + 12012);
     t16 = (t15 + 0U);
     t17 = (t16 + 0U);
     *((int *)t17) = 0;
@@ -387,8 +387,8 @@ LAB7:    if (t1 != 0)
 
 LAB4:    t25 = (t0 + 3432U);
     t26 = *((char **)t25);
-    t25 = (t0 + 10152U);
-    t27 = (t0 + 10542);
+    t25 = (t0 + 11624U);
+    t27 = (t0 + 12014);
     t30 = (t29 + 0U);
     t31 = (t30 + 0U);
     *((int *)t31) = 0;
@@ -407,8 +407,8 @@ LAB4:    t25 = (t0 + 3432U);
 
 LAB9:    t39 = (t0 + 3432U);
     t40 = *((char **)t39);
-    t39 = (t0 + 10152U);
-    t41 = (t0 + 10544);
+    t39 = (t0 + 11624U);
+    t41 = (t0 + 12016);
     t44 = (t43 + 0U);
     t45 = (t44 + 0U);
     *((int *)t45) = 0;

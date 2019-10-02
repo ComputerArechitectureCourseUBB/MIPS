@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-28T15:13:54</DateModified>
+  <DateModified>2019-09-11T17:14:37</DateModified>
   <ModuleName>top</ModuleName>
   <SummaryTimeStamp>2018-11-28T12:37:27</SummaryTimeStamp>
-  <SavedFilePath>/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/icarosix/Clases/Arqui/cores/mips/Mips_top_module/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/</ImplementationReportsDirectory>
   <DateInitialized>2018-11-23T19:46:14</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

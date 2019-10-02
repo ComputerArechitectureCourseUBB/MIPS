@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/icarosix/git/mips_top_module/Mips_top_module/dp.vhd";
+static const char *ng0 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/dp.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -104,7 +104,7 @@ LAB3:    t1 = (t0 + 4072U);
     t20 = (t16 + 12U);
     *((unsigned int *)t20) = t18;
     t11 = xsi_base_array_concat(t11, t12, t13, (char)97, t1, t14, (char)97, t6, t19, (char)101);
-    t20 = (t0 + 13968);
+    t20 = (t0 + 16416);
     t25 = ((IEEE_P_2592010699) + 4000);
     t27 = (t26 + 0U);
     t28 = (t27 + 0U);

@@ -24,7 +24,7 @@
 extern char *STD_TEXTIO;
 static const char *ng1 = "ramfile";
 extern char *STD_STANDARD;
-static const char *ng3 = "/home/icarosix/git/mips_top_module/Mips_top_module/imem.vhd";
+static const char *ng3 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/imem.vhd";
 extern char *IEEE_P_2592010699;
 extern char *IEEE_P_3620187407;
 
@@ -273,7 +273,7 @@ LAB2:    xsi_set_current_line(71, ng3);
     t5 = *((char **)t4);
     t4 = (t0 + 1192U);
     t6 = *((char **)t4);
-    t4 = (t0 + 5312U);
+    t4 = (t0 + 5720U);
     t7 = ieee_p_3620187407_sub_5109402382352621412_3965413181(IEEE_P_3620187407, t6, t4);
     t8 = (t7 - 0);
     t9 = (t8 * 1);

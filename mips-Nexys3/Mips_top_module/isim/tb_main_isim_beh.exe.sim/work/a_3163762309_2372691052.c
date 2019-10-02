@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/icarosix/git/mips_top_module/Mips_top_module/tb_main.vhd";
+static const char *ng0 = "/home/icarosix/WinData/Cursos/Arquitectura de computadores/materials/MIPS/mips-Nexys3/Mips_top_module/tb_main.vhd";
 
 
 
@@ -165,7 +165,7 @@ LAB9:    goto LAB8;
 LAB11:    goto LAB9;
 
 LAB12:    xsi_set_current_line(95, ng0);
-    t2 = (t0 + 5656);
+    t2 = (t0 + 6168);
     t5 = (t0 + 3544);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -189,7 +189,7 @@ LAB13:    goto LAB12;
 LAB15:    goto LAB13;
 
 LAB16:    xsi_set_current_line(97, ng0);
-    t2 = (t0 + 5664);
+    t2 = (t0 + 6176);
     t5 = (t0 + 3544);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
